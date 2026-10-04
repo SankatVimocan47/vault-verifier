@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narendra Jarjapu | Software Engineer in Test | QA Automation Lead</title>
+  <meta name="description" content="Software Engineer in Test with 8+ years in test automation, data validation and quality engineering across banking, healthcare, networking and SaaS. H-1B with approved I-140 – transfer-ready." />
+  <meta name="keywords" content="SDET, Software Engineer in Test, QA Automation Engineer, QA Lead, Test Automation, Pytest, Selenium, Playwright, Cypress, Tricentis qTest, Banking QA, Mainframe Testing, Data Conversion Testing, H-1B transfer" />
+  <meta name="author" content="Narendra Jarjapu" />
+
+  <!-- LinkedIn / Open Graph preview -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Narendra Jarjapu – Software Engineer in Test | QA Automation Lead" />
+  <meta property="og:description" content="8+ yrs SDET. Reconciled $295M with $0.00 variance, caught a $140M defect before go-live, cut 2-hour manual balancing to under 20 seconds. H-1B with approved I-140." />
+  <meta property="profile:first_name" content="Narendra" />
+  <meta property="profile:last_name" content="Jarjapu" />
+  <meta name="twitter:card" content="summary" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Narendra Jarjapu",
+    "jobTitle": "Software Engineer in Test",
+    "email": "mailto:jnarendra1410@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Florence", "addressRegion": "KY", "postalCode": "41042", "addressCountry": "US" },
+    "sameAs": ["https://www.linkedin.com/in/narendra-jarjapu-a00477194"],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Florida Institute of Technology" },
+      { "@type": "CollegeOrUniversity", "name": "Jawaharlal Nehru Technological University" }
+    ],
+    "knowsAbout": ["Test Automation", "Pytest", "Selenium WebDriver", "Playwright", "Cypress", "Tricentis qTest", "BDD", "Data Conversion Testing", "Mainframe Testing", "CI/CD", "AWS"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-alt: #0f1a2e;
+      --card: #131f36;
+      --card-border: #1f2e4d;
+      --text: #e6edf7;
+      --muted: #9fb0c8;
+      --accent: #22c55e;
+      --accent-2: #38bdf8;
+      --warn: #f59e0b;
+      --radius: 14px;
+      --maxw: 1140px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+    .mono { font-family: "Cascadia Code", Consolas, "SFMono-Regular", Menlo, monospace; }
+
+    /* Nav */
+    header.nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(11, 18, 32, .85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--card-border);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { font-weight: 700; color: var(--text); letter-spacing: .3px; }
+    .brand span { color: var(--accent); }
+    .nav-links { display: flex; gap: 22px; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: .95rem; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .menu-btn { display: none; background: none; border: 1px solid var(--card-border); color: var(--text); border-radius: 8px; padding: 6px 10px; cursor: pointer; }
+    @media (max-width: 860px) {
+      .menu-btn { display: block; }
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; background: var(--bg-alt); padding: 16px; border-bottom: 1px solid var(--card-border); }
+      .nav-links.open { display: flex; }
+    }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 10px; font-weight: 600; font-size: .95rem; border: 1px solid transparent; transition: transform .15s ease, background .15s ease; }
+    .btn:hover { text-decoration: none; transform: translateY(-1px); }
+    .btn-primary { background: var(--accent); color: #05210f; }
+    .btn-primary:hover { background: #2fd96b; }
+    .btn-ghost { border-color: var(--card-border); color: var(--text); background: var(--card); }
+    .btn-ghost:hover { border-color: var(--accent-2); }
+
+    /* Hero */
+    .hero { padding: 72px 0 56px; background: radial-gradient(1000px 500px at 85% -10%, rgba(56, 189, 248, .14), transparent 60%), radial-gradient(800px 400px at 0% 0%, rgba(34, 197, 94, .10), transparent 60%); }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 44px; align-items: center; }
+    @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; } }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .pill { display: inline-flex; align-items: center; gap: 8px; font-size: .82rem; font-weight: 600; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--card-border); background: var(--card); color: var(--muted); }
+    .pill.green { color: var(--accent); border-color: rgba(34, 197, 94, .45); background: rgba(34, 197, 94, .08); }
+    .pill.blue { color: var(--accent-2); border-color: rgba(56, 189, 248, .45); background: rgba(56, 189, 248, .08); }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 rgba(34, 197, 94, .7); animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(34,197,94,.6); } 70% { box-shadow: 0 0 0 10px rgba(34,197,94,0); } 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); } }
+    @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+    h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); line-height: 1.1; margin: 0 0 12px; letter-spacing: -.5px; }
+    .headline { font-size: clamp(1.05rem, 2vw, 1.3rem); color: var(--accent-2); font-weight: 600; margin: 0 0 18px; }
+    .lead { color: var(--muted); font-size: 1.05rem; max-width: 620px; margin: 0 0 26px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .meta-row { margin-top: 22px; color: var(--muted); font-size: .92rem; display: flex; flex-wrap: wrap; gap: 18px; }
+
+    /* Terminal */
+    .terminal { background: #070d18; border: 1px solid var(--card-border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+    .term-bar { display: flex; align-items: center; gap: 7px; padding: 10px 14px; background: #0d1626; border-bottom: 1px solid var(--card-border); }
+    .term-bar i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+    .term-bar .r { background: #ef4444; } .term-bar .y { background: #f59e0b; } .term-bar .g { background: #22c55e; }
+    .term-bar span { margin-left: 8px; color: var(--muted); font-size: .8rem; }
+    .term-body { padding: 18px 18px 20px; font-size: .84rem; line-height: 1.75; white-space: pre-wrap; color: #cbd5e1; min-height: 300px; }
+    .t-cmd { color: var(--accent-2); }
+    .t-pass { color: var(--accent); font-weight: 700; }
+    .t-dim { color: #64748b; }
+    .t-sum { color: #05210f; background: var(--accent); padding: 0 6px; border-radius: 4px; font-weight: 700; }
+    .cursor { display: inline-block; width: 8px; height: 1em; background: var(--accent); vertical-align: -2px; animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* Sections */
+    section { padding: 72px 0; }
+    section.alt { background: var(--bg-alt); border-top: 1px solid var(--card-border); border-bottom: 1px solid var(--card-border); }
+    .eyebrow { color: var(--accent); font-weight: 700; font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 14px; letter-spacing: -.3px; }
+    .section-intro { color: var(--muted); max-width: 760px; margin: 0 0 36px; }
+
+    /* Metrics */
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; }
+    .metric { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 22px; }
+    .metric .num { font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1.1; }
+    .metric .label { color: var(--muted); font-size: .92rem; margin-top: 6px; }
+
+    /* Visa */
+    .visa-card { display: grid; grid-template-columns: 1fr 1.3fr; gap: 28px; background: linear-gradient(135deg, rgba(34,197,94,.10), rgba(56,189,248,.08)); border: 1px solid rgba(34,197,94,.4); border-radius: 18px; padding: 32px; }
+    @media (max-width: 860px) { .visa-card { grid-template-columns: 1fr; } }
+    .visa-status { font-size: 1.5rem; font-weight: 800; margin: 6px 0 10px; }
+    .visa-status small { display: block; font-size: 1rem; color: var(--accent); font-weight: 700; margin-top: 4px; }
+    .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .check-list li { display: flex; gap: 12px; align-items: flex-start; }
+    .check-list li::before { content: "\2713"; flex: 0 0 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #05210f; font-weight: 900; font-size: .8rem; display: grid; place-items: center; margin-top: 1px; }
+    .fineprint { color: var(--muted); font-size: .8rem; margin-top: 14px; }
+
+    /* Case studies */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    .card { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; transition: border-color .2s ease, transform .2s ease; }
+    .card:hover { border-color: var(--accent-2); transform: translateY(-2px); }
+    .card h3 { margin: 0 0 6px; font-size: 1.15rem; }
+    .card .ctx { color: var(--accent-2); font-size: .85rem; font-weight: 600; margin-bottom: 12px; }
+    .card dl { margin: 0; display: grid; gap: 10px; }
+    .card dt { font-size: .74rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); }
+    .card dd { margin: 0; font-size: .95rem; }
+    .card dd.result { color: var(--accent); font-weight: 600; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .tag { font-size: .75rem; padding: 3px 9px; border-radius: 6px; background: #0b1424; border: 1px solid var(--card-border); color: var(--muted); }
+
+    /* Timeline */
+    .timeline { position: relative; margin-left: 10px; border-left: 2px solid var(--card-border); }
+    .tl-item { position: relative; padding: 0 0 34px 30px; }
+    .tl-item::before { content: ""; position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 3px solid var(--accent); }
+    .tl-item.current::before { background: var(--accent); }
+    .tl-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+    .tl-head h3 { margin: 0; font-size: 1.15rem; }
+    .tl-head .company { color: var(--accent-2); font-weight: 600; }
+    .tl-date { color: var(--muted); font-size: .88rem; }
+    .tl-item ul { margin: 10px 0 0; padding-left: 18px; color: #cdd7e6; }
+    .tl-item li { margin-bottom: 6px; }
+    details.more { margin-top: 8px; }
+    details.more summary { cursor: pointer; color: var(--accent-2); font-size: .9rem; font-weight: 600; }
+
+    /* Skills */
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .skill-group { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 20px; }
+    .skill-group h4 { margin: 0 0 12px; font-size: 1rem; color: var(--accent); }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip { font-size: .82rem; padding: 4px 10px; border-radius: 999px; background: #0b1424; border: 1px solid var(--card-border); }
+
+    /* Approach */
+    .approach { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; counter-reset: step; }
+    .step { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 22px; position: relative; }
+    .step::before { counter-increment: step; content: "0" counter(step); font-family: Consolas, monospace; color: var(--accent); font-weight: 800; font-size: 1.3rem; display: block; margin-bottom: 6px; }
+    .step h4 { margin: 0 0 6px; }
+    .step p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+    /* Education */
+    .edu { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+    .edu .card h3 { font-size: 1.05rem; }
+
+    /* Contact */
+    .contact { text-align: center; }
+    .contact h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+    .contact .section-intro { margin-left: auto; margin-right: auto; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; max-width: 900px; margin: 0 auto 28px; }
+    .contact-item { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 18px; }
+    .contact-item .k { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: 1.2px; }
+    .contact-item .v { font-weight: 600; margin-top: 4px; word-break: break-word; }
+
+    footer { padding: 26px 0; color: var(--muted); font-size: .85rem; text-align: center; border-top: 1px solid var(--card-border); }
+
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+    @media print {
+      header.nav, .terminal, .cta-row, .menu-btn { display: none !important; }
+      body { background: #fff; color: #000; }
+      section, section.alt { padding: 20px 0; background: #fff; }
+      .card, .metric, .skill-group, .step, .visa-card, .contact-item { background: #fff; border-color: #ccc; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">Narendra<span>.</span>Jarjapu</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#impact">Impact</a>
+        <a href="#work-authorization">Work Authorization</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn btn-primary" style="padding:8px 16px;">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="pill-row">
+            <span class="pill green"><span class="dot" aria-hidden="true"></span>Open to SDET / QA Lead roles</span>
+            <span class="pill blue">H-1B &middot; Approved I-140</span>
+            <span class="pill">Florence, KY &middot; Open to Remote / Hybrid / Relocation</span>
+          </div>
+          <h1>Narendra Jarjapu</h1>
+          <p class="headline">Software Engineer in Test &nbsp;|&nbsp; QA Automation Engineer &nbsp;|&nbsp; QA Lead</p>
+          <p class="lead">
+            I build test automation and data-validation frameworks that catch costly defects
+            <strong>before</strong> production. 8+ years across banking, healthcare, networking and SaaS. Currently
+            leading test engineering for a core banking conversion at Fifth Third Bank, where my suites reconciled
+            <strong>$295M+ with $0.00 variance</strong> and caught a <strong>$140M defect before go-live</strong>.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:jnarendra1410@gmail.com?subject=Opportunity%20for%20Narendra%20Jarjapu%20-%20SDET%20%2F%20QA%20Role">Email Me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/narendra-jarjapu-a00477194" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="Narendra_Jarjapu_Resume.pdf" download>Download Resume</a>
+          </div>
+          <div class="meta-row">
+            <span>8+ years experience</span>
+            <span>MS, Computer Information Systems</span>
+            <span>Banking &middot; Mainframe &middot; Cloud SaaS</span>
+          </div>
+        </div>
+
+        <div class="terminal" aria-label="Candidate test report">
+          <div class="term-bar"><i class="r"></i><i class="y"></i><i class="g"></i><span class="mono">test_candidate.py</span></div>
+          <div class="term-body mono" id="termBody" aria-live="off"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact" class="alt">
+      <div class="container reveal">
+        <div class="eyebrow">Measurable Impact</div>
+        <h2>Quality results you can measure</h2>
+        <p class="section-intro">Numbers from production-grade banking, retirement and SaaS programs I've tested.</p>
+        <div class="metrics">
+          <div class="metric"><div class="num" data-count="295" data-prefix="$" data-suffix="M+">$295M+</div><div class="label">Balances reconciled with <strong>$0.00 variance</strong> across conversion cycles</div></div>
+          <div class="metric"><div class="num" data-count="140" data-prefix="$" data-suffix="M">$140M</div><div class="label">Product-mapping defect caught <strong>before go-live</strong></div></div>
+          <div class="metric"><div class="num">&lt;20 sec</div><div class="label">Automated balancing, replacing <strong>1&ndash;2 hrs</strong> of manual entry per application; adopted as the <strong>company-wide template</strong></div></div>
+          <div class="metric"><div class="num" data-count="140" data-suffix="K+">140K+</div><div class="label">Source accounts validated in a core CD conversion (90K+ converted certificates)</div></div>
+          <div class="metric"><div class="num" data-count="185" data-suffix="K+">185K+</div><div class="label">IRA accounts covered by automated FMV, RMD and IRS/1099 regression</div></div>
+          <div class="metric"><div class="num" data-count="50" data-suffix="K+">50K+</div><div class="label">Certificates validated for interest accrual &amp; early-withdrawal penalty rules</div></div>
+          <div class="metric"><div class="num">14h &rarr; 4h</div><div class="label">Search reindexing time reduced at StyleSeat, improving bookings</div></div>
+          <div class="metric"><div class="num">~50%</div><div class="label">Faster S3 data transfers; ~20% AWS cost reduction at Blue Cross Blue Shield</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK AUTHORIZATION -->
+    <section id="work-authorization">
+      <div class="container reveal">
+        <div class="eyebrow">Work Authorization</div>
+        <h2>Simple to hire. Ready to start.</h2>
+        <div class="visa-card">
+          <div>
+            <div class="visa-status">H-1B Visa<small>with Approved I-140</small></div>
+            <p style="color:var(--muted); margin:0;">
+              Already in the U.S. and authorized to work. Moving to your team is a standard H-1B transfer,
+              not a new lottery case.
+            </p>
+          </div>
+          <ul class="check-list">
+            <li><div><strong>No H-1B lottery needed.</strong> I'm already cap-counted, so an employer can file a transfer petition at any time of year.</div></li>
+            <li><div><strong>Fast start.</strong> Under H-1B portability, I can typically begin work once the transfer petition is filed with USCIS.</div></li>
+            <li><div><strong>Approved I-140.</strong> My green card priority date carries forward, and H-1B extensions beyond the 6-year limit are available.</div></li>
+            <li><div><strong>Long-term commitment.</strong> I'm settled in the U.S. and looking for a team to grow with over the long term.</div></li>
+          </ul>
+        </div>
+        <p class="fineprint">Happy to discuss specifics with your immigration counsel or HR team.</p>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="case-studies" class="alt">
+      <div class="container reveal">
+        <div class="eyebrow">Featured Work</div>
+        <h2>Case studies</h2>
+        <p class="section-intro">How I approach high-stakes quality problems, from risk to result.</p>
+        <div class="cards">
+
+          <article class="card">
+            <h3>Core Banking Data Conversion QA</h3>
+            <div class="ctx">Fifth Third Bank &middot; Time Deposits (CD)</div>
+            <dl>
+              <dt>Challenge</dt>
+              <dd>Migrate 140K+ certificate-of-deposit accounts from a COBOL mainframe to a new core with no money lost and no customer impact.</dd>
+              <dt>Approach</dt>
+              <dd>Owned test strategy across DEV, QE, SIT/Stage and UAT. Built 45+ Python/Pytest tests for account, customer, branch, hold and product-type mapping, checked against the COBOL conversion logic.</dd>
+              <dt>Result</dt>
+              <dd class="result">$295M+ reconciled with $0.00 variance. A $140M product-mapping defect was caught before go-live.</dd>
+            </dl>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Pytest</span><span class="tag">COBOL</span><span class="tag">SQL</span><span class="tag">Mainframe</span><span class="tag">Gherkin</span></div>
+          </article>
+
+          <article class="card">
+            <h3>Balancing Automation &amp; Leadership Reporting</h3>
+            <div class="ctx">Fifth Third Bank &middot; Time Deposits, RRS, Safebox</div>
+            <dl>
+              <dt>Challenge</dt>
+              <dd>Every conversion cycle required 1&ndash;2 hours of manual, bank-by-bank data entry per application (3&ndash;6 hours per cycle).</dd>
+              <dt>Approach</dt>
+              <dd>Built a Python tool that reads 24+ bank-level reports and produces leadership-ready balancing packets and executive summary workbooks.</dd>
+              <dt>Result</dt>
+              <dd class="result">Runs in under 20 seconds across 4 cycles (Mock 2, Mock 3, Pre-CD1, CD1 Live). Adopted as the company-wide balancing template.</dd>
+            </dl>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Excel Automation</span><span class="tag">Reporting</span><span class="tag">Leadership Sign-off</span></div>
+          </article>
+
+          <article class="card">
+            <h3>Banking Calculation Test Automation</h3>
+            <div class="ctx">Interest Accrual &amp; Early Withdrawal Penalty</div>
+            <dl>
+              <dt>Challenge</dt>
+              <dd>Prove that interest and penalty math on the new platform matches mainframe business rules down to the cent.</dd>
+              <dt>Approach</dt>
+              <dd>Automated daily accrual tests (simple and compound; 360/365/366-day basis) and Early Withdrawal Penalty (EWP) tests.</dd>
+              <dt>Result</dt>
+              <dd class="result">50K+ certificates validated automatically against mainframe rules.</dd>
+            </dl>
+            <div class="tags"><span class="tag">Pytest</span><span class="tag">Data-Driven Testing</span><span class="tag">Financial Calculations</span></div>
+          </article>
+
+          <article class="card">
+            <h3>UI Automation for a Cloud Core Banking Platform</h3>
+            <div class="ctx">FIS Modern Banking Platform (SaaS) &middot; Back Office</div>
+            <dl>
+              <dt>Challenge</dt>
+              <dd>Regression-test CD inquiry, setup, maintenance, maturity and renewal workflows on every release.</dd>
+              <dt>Approach</dt>
+              <dd>Built a Selenium WebDriver suite using the Page Object Model, plus end-to-end tests for downstream integrations.</dd>
+              <dt>Result</dt>
+              <dd class="result">Repeatable regression coverage for critical back-office CD workflows.</dd>
+            </dl>
+            <div class="tags"><span class="tag">Selenium</span><span class="tag">POM</span><span class="tag">E2E</span><span class="tag">SaaS</span></div>
+          </article>
+
+          <article class="card">
+            <h3>Test Management &amp; Traceability at Scale</h3>
+            <div class="ctx">Tricentis qTest &middot; Jira</div>
+            <dl>
+              <dt>Challenge</dt>
+              <dd>Give audit-ready evidence that every conversion rule was tested, combining manual, UAT and automated runs.</dd>
+              <dt>Approach</dt>
+              <dd>Linked Jira stories and defects to qTest requirements (RTM), imported Pytest JUnit XML results, and standardized templates and reusable regression suites.</dd>
+              <dt>Result</dt>
+              <dd class="result">qTest Insights dashboards supported daily status and go/no-go decisions.</dd>
+            </dl>
+            <div class="tags"><span class="tag">qTest</span><span class="tag">RTM</span><span class="tag">Jira</span><span class="tag">UAT</span></div>
+          </article>
+
+          <article class="card">
+            <h3>Mainframe Test Tooling</h3>
+            <div class="ctx">FTP &middot; EBCDIC &middot; CICS &middot; RAFT</div>
+            <dl>
+              <dt>Challenge</dt>
+              <dd>Manual file transfers and green-screen checks slowed daily regression.</dd>
+              <dt>Approach</dt>
+              <dd>Built a Python FTP utility that pulls EBCDIC and packed-decimal extracts, automated CICS SafeBox screen regression, and created a RAFT-style Certificate Inquiry viewer.</dd>
+              <dt>Result</dt>
+              <dd class="result">Daily automated regression runs, with faster validation for business and development teams.</dd>
+            </dl>
+            <div class="tags"><span class="tag">Python</span><span class="tag">FTP</span><span class="tag">CICS</span><span class="tag">TSO</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container reveal">
+        <div class="eyebrow">Career</div>
+        <h2>Experience</h2>
+        <p class="section-intro">From cloud SaaS and networking to core banking, with quality engineering throughout.</p>
+
+        <div class="timeline">
+          <div class="tl-item current">
+            <div class="tl-head">
+              <h3>Software Engineer in Test &middot; <span class="company">Fifth Third Bank</span></h3>
+              <span class="tl-date">Nov 2023 &ndash; Present</span>
+            </div>
+            <ul>
+              <li>Lead QA for the Time Deposits (CD) core conversion: 140K+ source accounts and 90K+ converted certificates.</li>
+              <li>Owned test strategy and plans across the SDLC/STLC and every promotion gate (DEV, QE, SIT/Stage, UAT), through production cutover.</li>
+              <li>Led defect triage and go/no-go meetings with development, Line of Business and leadership; mentored teammates on Python/Pytest.</li>
+              <li>Partnered with LOB stakeholders, BAs and product owners to turn business rules into Gherkin acceptance criteria and to support UAT sign-off.</li>
+            </ul>
+            <details class="more">
+              <summary>More highlights</summary>
+              <ul>
+                <li>Built balancing automation for Time Deposits, RRS and Safebox Accounting. It now runs in under 20 seconds and is the company-wide template.</li>
+                <li>Automated Retirement (IRA) testing for FMV, RMD and IRS/1099 regression across 185K+ accounts.</li>
+                <li>Built Selenium POM automation for the FIS Modern Banking Platform Back Office.</li>
+                <li>Used GitHub Copilot (chat and agent mode) to speed up test design, automation and COBOL analysis, verifying every output against source code and real data.</li>
+              </ul>
+            </details>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3>Senior Data QA Engineer &middot; <span class="company">StyleSeat, Inc.</span></h3>
+              <span class="tl-date">Jun 2022 &ndash; Oct 2023</span>
+            </div>
+            <ul>
+              <li>Led backend and data testing for a SaaS booking platform (web, iOS, Android), prioritizing P0/P1/P2 cases by risk in TestRail.</li>
+              <li>Built Playwright and Cypress end-to-end tests for React.js booking, search, calendar and checkout flows.</li>
+              <li>Reduced search reindexing from 14 to 4 hours. Built an ETL pipeline from Kinesis Firehose using Airflow, Boto3 and Docker, and automated A/B testing for the Search API and Elasticsearch.</li>
+              <li>Integrated tests into CircleCI and Azure DevOps with Slack failure alerts.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3>Python Automation Test Engineer &middot; <span class="company">Cisco Systems, Inc.</span></h3>
+              <span class="tl-date">Feb 2021 &ndash; May 2022</span>
+            </div>
+            <ul>
+              <li>Implemented the QALI framework for REST API and GUI automation across blade and rack servers.</li>
+              <li>Built a Selenium POM framework with data-driven tests, explicit waits and cross-browser runs, which reduced flaky tests.</li>
+              <li>Ran firmware, OS and configuration test cycles and TPM validation across server platforms to support release readiness.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3>Python Automation Engineer &middot; <span class="company">Blue Cross Blue Shield</span></h3>
+              <span class="tl-date">Sep 2020 &ndash; Jan 2021</span>
+            </div>
+            <ul>
+              <li>Cut data transfer time by about 50% with AWS DataSync and Boto3, and reduced AWS costs by about 20%.</li>
+              <li>Built TDD/BDD frameworks with Pytest and automated CloudTrail log reporting.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3>Software Engineer &middot; <span class="company">Cisco Systems, Inc.</span></h3>
+              <span class="tl-date">Dec 2018 &ndash; Aug 2020</span>
+            </div>
+            <ul>
+              <li>Deployed containerized apps to AWS EKS with Docker and Kubernetes across DEV, Stage and Production.</li>
+              <li>Wrote Python API scripts for enterprise SaaS deployments at General Motors, AT&amp;T and T-Mobile.</li>
+              <li>Introduced Selenium/POM test automation and Airflow job workflows.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3>Research Assistant &middot; <span class="company">Florida Institute of Technology</span></h3>
+              <span class="tl-date">Jan 2017 &ndash; Jun 2018</span>
+            </div>
+            <ul>
+              <li>Built a Python Django application with REST APIs and automated Excel/CSV data processing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="alt">
+      <div class="container reveal">
+        <div class="eyebrow">How I Work</div>
+        <h2>My quality engineering approach</h2>
+        <div class="approach">
+          <div class="step"><h4>Shift left</h4><p>Get into requirements early and turn business rules into testable Gherkin acceptance criteria with LOB and product teams.</p></div>
+          <div class="step"><h4>Risk-based strategy</h4><p>Prioritize the scenarios where defects would cost the most, such as money movement, compliance and customer impact.</p></div>
+          <div class="step"><h4>Automate &amp; reconcile</h4><p>Build data-driven Pytest, Selenium and Playwright suites that reconcile every dollar and every record.</p></div>
+          <div class="step"><h4>Trace &amp; report</h4><p>Keep full requirements traceability in qTest and Jira, and give leadership clear metrics for go/no-go decisions.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container reveal">
+        <div class="eyebrow">Toolbox</div>
+        <h2>Technical skills</h2>
+        <p class="section-intro">The tools and practices I use day to day.</p>
+        <div class="skills">
+          <div class="skill-group"><h4>Test Automation</h4><div class="chips">
+            <span class="chip">Pytest</span><span class="chip">Selenium WebDriver</span><span class="chip">Playwright</span><span class="chip">Cypress</span><span class="chip">Page Object Model</span><span class="chip">Cucumber / Gherkin</span><span class="chip">BDD / TDD</span><span class="chip">Postman</span><span class="chip">REST API Testing</span><span class="chip">Data-Driven Testing</span><span class="chip">Cross-Browser</span>
+          </div></div>
+          <div class="skill-group"><h4>Test Management &amp; Process</h4><div class="chips">
+            <span class="chip">Tricentis qTest</span><span class="chip">qTest Insights</span><span class="chip">TestRail</span><span class="chip">Jira</span><span class="chip">RTM</span><span class="chip">SDLC / STLC</span><span class="chip">Agile / Scrum</span><span class="chip">Risk-Based Testing</span><span class="chip">UAT</span><span class="chip">Go/No-Go</span><span class="chip">Root Cause Analysis</span>
+          </div></div>
+          <div class="skill-group"><h4>Languages</h4><div class="chips">
+            <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">React.js</span><span class="chip">COBOL</span><span class="chip">Go</span><span class="chip">C</span>
+          </div></div>
+          <div class="skill-group"><h4>Banking &amp; Mainframe</h4><div class="chips">
+            <span class="chip">FIS Modern Banking Platform</span><span class="chip">IBM Mainframe</span><span class="chip">COBOL Batch</span><span class="chip">CICS</span><span class="chip">TSO</span><span class="chip">RAFT</span><span class="chip">EBCDIC / Packed Decimal</span><span class="chip">Data Conversion</span><span class="chip">Interest &amp; Penalty Calcs</span>
+          </div></div>
+          <div class="skill-group"><h4>CI/CD &amp; DevOps</h4><div class="chips">
+            <span class="chip">Azure DevOps</span><span class="chip">Jenkins</span><span class="chip">CircleCI</span><span class="chip">Git / GitHub</span><span class="chip">Bitbucket</span><span class="chip">Docker</span><span class="chip">Kubernetes</span>
+          </div></div>
+          <div class="skill-group"><h4>Cloud &amp; Data</h4><div class="chips">
+            <span class="chip">AWS (EC2, EKS, S3, Lambda)</span><span class="chip">Kinesis</span><span class="chip">Glue</span><span class="chip">Redshift</span><span class="chip">CloudWatch</span><span class="chip">Airflow</span><span class="chip">DBT</span><span class="chip">Amazon Deequ</span><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">MySQL</span><span class="chip">MongoDB</span>
+          </div></div>
+          <div class="skill-group"><h4>AI-Assisted Engineering</h4><div class="chips">
+            <span class="chip">GitHub Copilot (Chat &amp; Agent)</span><span class="chip">Prompt Engineering</span><span class="chip">AI-Assisted Test Design</span><span class="chip">AI Code Review</span>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="alt">
+      <div class="container reveal">
+        <div class="eyebrow">Education</div>
+        <h2>Education</h2>
+        <div class="edu">
+          <div class="card"><h3>Master of Science, Computer Information Systems</h3><div class="ctx">Florida Institute of Technology &middot; 2018</div></div>
+          <div class="card"><h3>Bachelor of Technology, Electronics &amp; Instrumentation</h3><div class="ctx">Jawaharlal Nehru Technological University &middot; 2015</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container reveal">
+        <div class="eyebrow">Let's Talk</div>
+        <h2>Looking for an SDET or QA Lead?</h2>
+        <p class="section-intro">
+          I'm interested in Software Engineer in Test, QA Automation, QA Lead and Quality Engineering roles,
+          especially in banking, fintech and SaaS. On H-1B with an approved I-140, so onboarding is a simple transfer.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-item"><div class="k">Email</div><div class="v"><a href="mailto:jnarendra1410@gmail.com">jnarendra1410@gmail.com</a></div></div>
+          <div class="contact-item"><div class="k">Phone</div><div class="v"><a href="tel:+13215253973">(321) 525-3973</a></div></div>
+          <div class="contact-item"><div class="k">LinkedIn</div><div class="v"><a href="https://www.linkedin.com/in/narendra-jarjapu-a00477194" target="_blank" rel="noopener noreferrer">narendra-jarjapu</a></div></div>
+          <div class="contact-item"><div class="k">Location</div><div class="v">Florence, KY (Cincinnati area)</div></div>
+        </div>
+        <div class="cta-row" style="justify-content:center;">
+          <a class="btn btn-primary" href="mailto:jnarendra1410@gmail.com?subject=Opportunity%20for%20Narendra%20Jarjapu%20-%20SDET%20%2F%20QA%20Role">Start a Conversation</a>
+          <a class="btn btn-ghost" href="Narendra_Jarjapu_Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">&copy; <span id="year"></span> Narendra Jarjapu &middot; Software Engineer in Test &middot; H-1B (Approved I-140)</div>
+  </footer>
+
+  <script>
+    (function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      var menuBtn = document.getElementById('menuBtn');
+      var navLinks = document.getElementById('navLinks');
+      menuBtn.addEventListener('click', function () {
+        var open = navLinks.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', String(open));
+      });
+      navLinks.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); });
+      });
+
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Terminal "test run"
+      var lines = [
+        ['cmd', '$ pytest tests/test_candidate.py -v'],
+        ['dim', 'collected 6 items'],
+        ['', ''],
+        ['test', 'test_years_of_experience', '8+ yrs'],
+        ['test', 'test_reconciliation_variance', '$0.00 on $295M'],
+        ['test', 'test_defect_caught_pre_golive', '$140M'],
+        ['test', 'test_automation_speedup', '2h -> <20s'],
+        ['test', 'test_stakeholder_leadership', 'LOB + Go/No-Go'],
+        ['test', 'test_work_authorization', 'H-1B + I-140'],
+        ['', ''],
+        ['sum', '6 passed in 0.08s']
+      ];
+
+      function render(line) {
+        var span = document.createElement('div');
+        if (line[0] === 'cmd') { span.className = 't-cmd'; span.textContent = line[1]; }
+        else if (line[0] === 'dim') { span.className = 't-dim'; span.textContent = line[1]; }
+        else if (line[0] === 'test') {
+          var name = document.createElement('span'); name.textContent = line[1] + ' ';
+          var pass = document.createElement('span'); pass.className = 't-pass'; pass.textContent = 'PASSED';
+          var note = document.createElement('span'); note.className = 't-dim'; note.textContent = '  (' + line[2] + ')';
+          span.appendChild(name); span.appendChild(pass); span.appendChild(note);
+        } else if (line[0] === 'sum') {
+          var s = document.createElement('span'); s.className = 't-sum'; s.textContent = '= ' + line[1] + ' =';
+          span.appendChild(s);
+          var c = document.createElement('span'); c.className = 'cursor'; c.style.marginLeft = '8px';
+          span.appendChild(c);
+        } else { span.innerHTML = '&nbsp;'; }
+        return span;
+      }
+
+      var term = document.getElementById('termBody');
+      if (reduceMotion) {
+        lines.forEach(function (l) { term.appendChild(render(l)); });
+      } else {
+        var i = 0;
+        (function next() {
+          if (i >= lines.length) return;
+          term.appendChild(render(lines[i]));
+          i++;
+          setTimeout(next, i === 1 ? 500 : 260);
+        })();
+      }
+
+      // Reveal on scroll + metric count-up
+      function countUp(el) {
+        var target = parseInt(el.getAttribute('data-count'), 10);
+        var prefix = el.getAttribute('data-prefix') || '';
+        var suffix = el.getAttribute('data-suffix') || '';
+        var start = null, dur = 1200;
+        function step(ts) {
+          if (!start) start = ts;
+          var p = Math.min((ts - start) / dur, 1);
+          el.textContent = prefix + Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+
+      var revealEls = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || reduceMotion) {
+        revealEls.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('visible');
+          e.target.querySelectorAll('[data-count]').forEach(countUp);
+          io.unobserve(e.target);
+        });
+      }, { threshold: 0.15 });
+      revealEls.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
