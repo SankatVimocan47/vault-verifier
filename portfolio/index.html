@@ -391,12 +391,12 @@
 
           <article class="card">
             <h3>Mainframe Test Tooling</h3>
-            <div class="ctx">FTP &middot; EBCDIC &middot; CICS &middot; RAFT</div>
+            <div class="ctx">Fifth Third Bank &middot; Mainframe Daily Regression</div>
             <dl>
               <dt>Challenge</dt>
               <dd>Manual file transfers and green-screen checks slowed daily regression.</dd>
               <dt>Approach</dt>
-              <dd>Built a Python FTP utility that pulls EBCDIC and packed-decimal extracts, automated CICS SafeBox screen regression, and created a RAFT-style Certificate Inquiry viewer.</dd>
+              <dd>Built a Python FTP utility to download daily certificate and customer extracts, decode EBCDIC and packed-decimal data, and remove manual transfers. Automated CICS SafeBox Rental screen regression and used TSO regions for test execution and validation.</dd>
               <dt>Result</dt>
               <dd class="result">Daily automated regression runs, with faster validation for business and development teams.</dd>
             </dl>
@@ -423,6 +423,7 @@
             <ul>
               <li>Lead QA for the Time Deposits (CD) core conversion: 140K+ source accounts and 90K+ converted certificates.</li>
               <li>Owned test strategy and plans across the SDLC/STLC and every promotion gate (DEV, QE, SIT/Stage, UAT), through production cutover.</li>
+              <li>Built Python FTP automation to download daily mainframe certificate and customer extracts, decode EBCDIC/packed-decimal data, and enable daily regression without manual transfers; automated CICS SafeBox Rental screen regression and used TSO regions for test execution and validation.</li>
               <li>Used GitHub Copilot in the Python/Pytest test-development workflow to draft candidate scenarios, refine tests, and explore edge cases; checked suggestions against COBOL logic and business rules before adding validated tests to the shared regression suite.</li>
               <li>Led defect triage and go/no-go meetings with development, Line of Business and leadership; mentored teammates on Python/Pytest.</li>
               <li>Partnered with LOB stakeholders, BAs and product owners to turn business rules into Gherkin acceptance criteria and to support UAT sign-off.</li>
