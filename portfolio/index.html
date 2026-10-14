@@ -178,6 +178,9 @@
     .skill-group h4 { margin: 0 0 12px; font-size: 1rem; color: var(--accent); }
     .chips { display: flex; flex-wrap: wrap; gap: 7px; }
     .chip { font-size: .82rem; padding: 4px 10px; border-radius: 999px; background: #0b1424; border: 1px solid var(--card-border); }
+    .certificate-card { max-width: 620px; }
+    .certificate-card img { display: block; width: 100%; height: auto; margin-top: 16px; border-radius: 8px; }
+    .certificate-card p { color: var(--muted); margin-bottom: 0; }
 
     /* Approach */
     .approach { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; counter-reset: step; }
@@ -225,6 +228,7 @@
         <a href="#work-authorization">Work Authorization</a>
         <a href="#case-studies">Case Studies</a>
         <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
         <a href="#skills">Skills</a>
         <a href="#contact" class="btn btn-primary" style="padding:8px 16px;">Hire Me</a>
       </nav>
@@ -551,6 +555,22 @@
           <div class="skill-group"><h4>AI-Assisted Engineering</h4><div class="chips">
             <span class="chip">GitHub Copilot (Chat, Agent Mode)</span><span class="chip">Prompt Engineering</span><span class="chip">AI-Assisted Test Design</span><span class="chip">AI-Assisted Code Review</span><span class="chip">Human-Reviewed Regression Workflow</span>
           </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="alt">
+      <div class="container reveal">
+        <div class="eyebrow">Professional Development</div>
+        <h2>Training &amp; certifications</h2>
+        <div class="skill-group certificate-card">
+          <h4>Data Producer Certificate</h4>
+          <p>Fifth Third Bank Enterprise Data Office &middot; September 19, 2025</p>
+          <p>Completed dbt (data build tool) cross-training focused on modern data strategy and building robust data products. Select the certificate to view it full size.</p>
+          <a href="dbt-data-producer-certificate.png" target="_blank" rel="noopener noreferrer" aria-label="View the Data Producer certificate full size">
+            <img src="dbt-data-producer-certificate.png" alt="Data Producer Certificate of Completion awarded to Narendra Jarjapu by Fifth Third Bank Enterprise Data Office on September 19, 2025" loading="lazy">
+          </a>
         </div>
       </div>
     </section>
